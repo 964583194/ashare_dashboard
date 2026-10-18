@@ -15,6 +15,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -22,7 +24,7 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Fetch public data
         run: python scripts/update_data.py
-      - name: Commit refreshed JSON
+      - name: Commit refreshed JSON without overwriting remote history
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -31,5 +33,7 @@ jobs:
             echo "No data changes"
           else
             git commit -m "Update dashboard data"
-            git push
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
