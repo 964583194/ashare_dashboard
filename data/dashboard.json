@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "generated_at": null,
+    "data_date": null,
+    "overall_status": "等待首次自动更新"
+  },
+  "overview": {
+    "hs300": null,
+    "chinext": null,
+    "star50": null,
+    "advancers": null,
+    "decliners": null
+  },
+  "indices": [],
+  "industry_flows": [],
+  "concept_flows": [],
+  "focus_sectors": [],
+  "breadth": {
+    "advancers": null,
+    "decliners": null,
+    "unchanged": null,
+    "advance_decline_ratio": null
+  },
+  "valuation": {
+    "hs300_pe": null,
+    "hs300_pe_percentile": null,
+    "equity_bond_spread": null,
+    "cn10y_yield": null
+  },
+  "sources": [
+    {
+      "module": "全部数据",
+      "status": "等待首次运行",
+      "date": null,
+      "note": "请在 GitHub Actions 中手动运行 Update A-share dashboard data"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827"><title>A股趋势与资金观察看板</title>
+<style>
+:root{--bg:#0b1220;--panel:#131e30;--panel2:#18263b;--line:#2b3b53;--text:#e8eef8;--muted:#9aabc2;--red:#ff737d;--green:#36c98f;--blue:#70a7ff;--yellow:#f5c96b}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#0b1220,#101a2b 60%,#0b1220);color:var(--text);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{padding:24px 18px 18px;max-width:1200px;margin:auto}h1{font-size:26px;margin:0 0 8px}h2{font-size:18px;margin:0 0 14px}h3{font-size:15px}.sub,.small{color:var(--muted);font-size:12px}
+main,footer{max-width:1200px;margin:auto;padding:0 14px 28px}.nav{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px}.nav a{color:#d7e5fa;text-decoration:none;background:#1b2b43;border:1px solid var(--line);padding:7px 11px;border-radius:9px;font-size:13px}
+.panel{background:rgba(19,30,48,.95);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px;min-width:0}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.metric{background:var(--panel2);border-radius:10px;padding:12px;min-width:0}.label{font-size:12px;color:var(--muted)}.value{font-size:22px;font-weight:700;margin-top:4px;overflow-wrap:anywhere}.foot{font-size:11px;color:var(--muted);margin-top:3px}
+.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}th,td{text-align:left;padding:9px 8px;border-bottom:1px solid #27364a}th{color:var(--muted);font-weight:500}td{color:#e1e9f5}.pill{display:inline-block;padding:3px 7px;border-radius:6px;background:#243650;color:#b8d4ff;font-size:11px}.up{color:var(--red)!important}.down{color:var(--green)!important}.status{padding:10px 12px;border-radius:9px;background:#17273b;color:#bfd2ed;font-size:13px;margin-bottom:12px}.warning{color:var(--yellow)}.section{scroll-margin-top:12px}
+@media(max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}h1{font-size:23px}.metric .value{font-size:20px}}@media(max-width:390px){.panel{padding:12px}}
+</style></head>
+<body>
+<header><h1>📈 A股趋势与资金观察看板</h1><div class="sub">用于趋势观察与风险管理，不构成投资建议。数据通过 GitHub Actions 定时生成。</div>
+<nav class="nav"><a href="#overview">市场概览</a><a href="#indices">指数趋势</a><a href="#flows">板块资金</a><a href="#focus">重点板块</a><a href="#breadth">市场宽度</a><a href="#valuation">估值与股债</a><a href="#data">数据状态</a></nav></header>
+<main>
+<div id="status" class="status">正在读取数据文件……</div>
+<section id="overview" class="panel section"><h2>市场概览</h2><div class="grid" id="overviewCards"></div><p class="small">数据缺失时显示“暂无数据”，不会用示例数字填充。</p></section>
+<section id="indices" class="panel section"><h2>指数趋势</h2><div class="tablewrap"><table><thead><tr><th>指数</th><th>最新点位</th><th>当日涨跌</th><th>5日涨跌</th><th>20日涨跌</th><th>数据日期</th></tr></thead><tbody id="indicesBody"></tbody></table></div><p class="small">涨跌幅由指数最近交易日收盘价计算；当日涨跌以最近两根日线计算。</p></section>
+<section id="flows" class="panel section"><h2>板块资金流向</h2><div class="two"><div><h3>行业板块 · 主力净流入靠前</h3><div class="tablewrap"><table><thead><tr><th>板块</th><th>涨跌幅</th><th>主力净流入(亿元)</th><th>净流入占比</th></tr></thead><tbody id="industryBody"></tbody></table></div></div><div><h3>概念板块 · 主力净流入靠前</h3><div class="tablewrap"><table><thead><tr><th>板块</th><th>涨跌幅</th><th>主力净流入(亿元)</th><th>净流入占比</th></tr></thead><tbody id="conceptBody"></tbody></table></div></div></div><p class="small">资金流向为行情供应商按成交行为估算，不等于真实机构账户净买入。接口字段发生变化时，该模块会标记失败。</p></section>
+<section id="focus" class="panel section"><h2>重点板块追踪</h2><div class="tablewrap"><table><thead><tr><th>板块</th><th>最新涨跌</th><th>5日表现</th><th>20日表现</th><th>状态说明</th></tr></thead><tbody id="focusBody"></tbody></table></div><p class="small">关注半导体、CPO/光模块、AI应用、电网设备、黄金、有色金属、稀土、储能/电池。名称未匹配时不擅自替代。</p></section>
+<section id="breadth" class="panel section"><h2>市场宽度</h2><div class="grid" id="breadthCards"></div><p class="small">上涨/下跌家数接口单独验证后接入；站上均线比例、创新高/新低等需要完整股票历史行情。</p></section>
+<section id="valuation" class="panel section"><h2>估值与股债观察</h2><div class="grid" id="valuationCards"></div><p class="small">股债利差参考口径：沪深300盈利收益率（100 ÷ PE-TTM）减去10年期国债收益率。没有稳定历史序列时不估算。</p></section>
+<section id="data" class="panel section"><h2>数据来源与更新状态</h2><div class="tablewrap"><table><thead><tr><th>数据模块</th><th>状态</th><th>数据日期</th><th>来源/说明</th></tr></thead><tbody id="dataBody"></tbody></table></div><p class="small">GitHub Actions 计划工作日北京时间约16:10运行；实际可能延迟。网页显示最近一次成功生成的数据，不是逐秒实时行情。</p></section>
+</main><footer class="small">仅供研究参考。数据源可能变更、延迟或不可用。请勿将单一指标作为买卖依据。</footer>
+<script>
+const $=id=>document.getElementById(id);
+const fmt=(v,s='')=>v===null||v===undefined||v===''?'暂无数据':(typeof v==='number'?v.toLocaleString('zh-CN',{maximumFractionDigits:2}):v)+s;
+const pct=v=>v===null||v===undefined?'暂无数据':fmt(v,'%');
+function card(label,value,foot=''){return `<div class="metric"><div class="label">${label}</div><div class="value">${value}</div><div class="foot">${foot||' '}</div></div>`}
+function rows(id,data,cols){const el=$(id);if(!data||!data.length){el.innerHTML=`<tr><td colspan="${cols.length}" class="small">暂无可用数据</td></tr>`;return}el.innerHTML=data.map(r=>'<tr>'+cols.map(c=>{let v=r[c.key], cls=c.color?(Number(v)>0?'up':Number(v)<0?'down':''):'';let out=c.render?c.render(v,r):fmt(v,c.suffix||'');return `<td class="${cls}">${out}</td>`}).join('')+'</tr>').join('')}
+fetch('./data/dashboard.json?ts='+Date.now()).then(r=>{if(!r.ok)throw Error('data file unavailable');return r.json()}).then(d=>{
+const m=d.meta||{};$('status').innerHTML=`数据日期：<b>${m.data_date||'暂无数据'}</b>　最后生成：<b>${m.generated_at||'暂无记录'}</b>　<span class="pill">${m.overall_status||'待接入'}</span>`;
+const o=d.overview||{};$('overviewCards').innerHTML=[card('沪深300',fmt(o.hs300),'指数点位'),card('创业板指',fmt(o.chinext),'指数点位'),card('科创50',fmt(o.star50),'指数点位'),card('上涨 / 下跌家数',`${fmt(o.advancers)} / ${fmt(o.decliners)}`,'市场宽度')].join('');
+rows('indicesBody',d.indices,[{key:'name'},{key:'latest'},{key:'change_pct',color:true,suffix:'%'},{key:'change_5d',color:true,suffix:'%'},{key:'change_20d',color:true,suffix:'%'},{key:'date'}]);
+const fc=[{key:'name'},{key:'change_pct',color:true,suffix:'%'},{key:'main_net_inflow'},{key:'inflow_ratio',suffix:'%'}];
+rows('industryBody',d.industry_flows,fc.map(c=>c.key==='main_net_inflow'?{key:c.key,render:v=>v==null?'暂无数据':fmt(v)+' 亿元'}:c));
+rows('conceptBody',d.concept_flows,fc.map(c=>c.key==='main_net_inflow'?{key:c.key,render:v=>v==null?'暂无数据':fmt(v)+' 亿元'}:c));
+rows('focusBody',d.focus_sectors,[{key:'name'},{key:'change_pct',color:true,suffix:'%'},{key:'change_5d',color:true,suffix:'%'},{key:'change_20d',color:true,suffix:'%'},{key:'status'}]);
+const b=d.breadth||{};$('breadthCards').innerHTML=[card('上涨家数',fmt(b.advancers)),card('下跌家数',fmt(b.decliners)),card('平盘家数',fmt(b.unchanged)),card('上涨/下跌比',fmt(b.advance_decline_ratio))].join('');
+const v=d.valuation||{};$('valuationCards').innerHTML=[card('沪深300 PE-TTM',fmt(v.hs300_pe)),card('沪深300 PE历史分位',pct(v.hs300_pe_percentile)),card('沪深300股债利差',pct(v.equity_bond_spread)),card('10年期国债收益率',pct(v.cn10y_yield))].join('');
+rows('dataBody',d.sources,[{key:'module'},{key:'status'},{key:'date'},{key:'note'}]);
+}).catch(()=>{$('status').innerHTML='<span class="warning">数据文件尚未生成或读取失败。</span> 请先运行 GitHub Actions。页面不会用虚构数字填充。';['overviewCards','breadthCards','valuationCards'].forEach(id=>$(id).innerHTML=card('数据状态','暂无数据','首次成功更新后显示'));['indicesBody','industryBody','conceptBody','focusBody','dataBody'].forEach(id=>rows(id,[],[{key:'x'}]));});
+</script></body></html>
