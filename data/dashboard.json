@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-10-20 21:32:41 CST",
-    "data_date": "2026-10-20",
+    "generated_at": "2026-10-21 21:44:01 CST",
+    "data_date": "2026-10-21",
     "overall_status": "百分位网股债与情绪数据可用；其他模块状态见数据来源"
   },
   "overview": {
@@ -223,17 +223,13 @@
   "valuation": {
     "hs300_pe": null,
     "hs300_pe_percentile": null,
-    "equity_bond_spread": 6.0058,
+    "equity_bond_spread": 6.06,
     "cn10y_yield": null
   },
   "fear_greed": {
-    "latest": 40.31,
-    "date": "2026-10-20",
+    "latest": 36.63,
+    "date": "2026-10-21",
     "series": [
-      {
-        "date": "2025-04-16",
-        "value": 21.91
-      },
       {
         "date": "2025-04-17",
         "value": 32.95
@@ -1689,6 +1685,10 @@
       {
         "date": "2026-10-20",
         "value": 40.31
+      },
+      {
+        "date": "2026-10-21",
+        "value": 36.63
       }
     ]
   },
@@ -2659,23 +2659,27 @@
     },
     {
       "date": "2026-10-19",
-      "value": 6.0058
+      "value": 6.0128
+    },
+    {
+      "date": "2026-10-20",
+      "value": 6.06
     }
   ],
   "sources": [
     {
       "module": "恐惧贪婪指数",
       "status": "成功",
-      "date": "2026-10-20",
+      "date": "2026-10-21",
       "note": "百分位网公开CSV；0-100分，展示衍生指数；每日历史",
-      "records": 8028
+      "records": 8029
     },
     {
       "module": "沪深300股债利差",
       "status": "成功",
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "note": "百分位网页面内嵌日频数据；100/沪深300市值加权PE-TTM减中国10年期国债收益率，单位百分点",
-      "records": 242
+      "records": 243
     },
     {
       "module": "沪深300",
@@ -2715,14 +2719,14 @@
     {
       "module": "行业板块资金",
       "status": "失败",
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 0
     },
     {
       "module": "概念板块资金",
       "status": "失败，保留旧数据",
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 20
     },
