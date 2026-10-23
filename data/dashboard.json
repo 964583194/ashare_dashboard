@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-10-22 21:44:58 CST",
-    "data_date": "2026-10-22",
+    "generated_at": "2026-10-23 21:21:49 CST",
+    "data_date": "2026-10-23",
     "overall_status": "百分位网股债与情绪数据可用；其他模块状态见数据来源"
   },
   "overview": {
@@ -223,17 +223,13 @@
   "valuation": {
     "hs300_pe": null,
     "hs300_pe_percentile": null,
-    "equity_bond_spread": 6.1407,
+    "equity_bond_spread": 6.2139,
     "cn10y_yield": null
   },
   "fear_greed": {
-    "latest": 25.98,
-    "date": "2026-10-22",
+    "latest": 51.64,
+    "date": "2026-10-23",
     "series": [
-      {
-        "date": "2025-04-18",
-        "value": 25.76
-      },
       {
         "date": "2025-04-21",
         "value": 40.01
@@ -1689,14 +1685,14 @@
       {
         "date": "2026-10-22",
         "value": 25.98
+      },
+      {
+        "date": "2026-10-23",
+        "value": 51.64
       }
     ]
   },
   "equity_bond_spread_series": [
-    {
-      "date": "2025-10-21",
-      "value": 5.1224
-    },
     {
       "date": "2025-10-22",
       "value": 5.1157
@@ -2664,20 +2660,24 @@
     {
       "date": "2026-10-21",
       "value": 6.1407
+    },
+    {
+      "date": "2026-10-22",
+      "value": 6.2139
     }
   ],
   "sources": [
     {
       "module": "恐惧贪婪指数",
       "status": "成功",
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "note": "百分位网公开CSV；0-100分，展示衍生指数；每日历史",
-      "records": 8030
+      "records": 8031
     },
     {
       "module": "沪深300股债利差",
       "status": "成功",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "note": "百分位网页面内嵌日频数据；100/沪深300市值加权PE-TTM减中国10年期国债收益率，单位百分点",
       "records": 243
     },
@@ -2719,14 +2719,14 @@
     {
       "module": "行业板块资金",
       "status": "失败",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 0
     },
     {
       "module": "概念板块资金",
       "status": "失败，保留旧数据",
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 20
     },
