@@ -1,17 +1,34 @@
 {
   "meta": {
-    "generated_at": "2026-10-27 22:25:06 CST",
-    "data_date": "2026-10-27",
+    "generated_at": "2026-10-28 23:03:58 CST",
+    "data_date": "2026-10-28",
     "overall_status": "百分位网股债与情绪数据可用；其他模块状态见数据来源"
   },
   "overview": {
-    "hs300": null,
-    "chinext": null,
+    "hs300": 4083.87,
+    "chinext": 2634.76,
     "star50": null,
     "advancers": null,
     "decliners": null
   },
-  "indices": [],
+  "indices": [
+    {
+      "name": "沪深300",
+      "latest": 4083.87,
+      "change_pct": 0.85,
+      "change_5d": -0.68,
+      "change_20d": -10.14,
+      "date": "2026-10-28"
+    },
+    {
+      "name": "创业板指",
+      "latest": 2634.76,
+      "change_pct": 3.4,
+      "change_5d": -2.22,
+      "change_20d": -22.51,
+      "date": "2026-10-28"
+    }
+  ],
   "industry_flows": [],
   "concept_flows": [
     {
@@ -223,17 +240,13 @@
   "valuation": {
     "hs300_pe": null,
     "hs300_pe_percentile": null,
-    "equity_bond_spread": 6.1088,
+    "equity_bond_spread": 6.1863,
     "cn10y_yield": null
   },
   "fear_greed": {
-    "latest": 25.09,
-    "date": "2026-10-27",
+    "latest": 41.94,
+    "date": "2026-10-28",
     "series": [
-      {
-        "date": "2025-04-23",
-        "value": 34.24
-      },
       {
         "date": "2025-04-24",
         "value": 25.47
@@ -1689,6 +1702,10 @@
       {
         "date": "2026-10-27",
         "value": 25.09
+      },
+      {
+        "date": "2026-10-28",
+        "value": 41.94
       }
     ]
   },
@@ -2660,36 +2677,40 @@
     {
       "date": "2026-10-26",
       "value": 6.1088
+    },
+    {
+      "date": "2026-10-27",
+      "value": 6.1863
     }
   ],
   "sources": [
     {
       "module": "恐惧贪婪指数",
       "status": "成功",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "note": "百分位网公开CSV；0-100分，展示衍生指数；每日历史",
-      "records": 8033
+      "records": 8034
     },
     {
       "module": "沪深300股债利差",
       "status": "成功",
-      "date": "2026-10-26",
+      "date": "2026-10-27",
       "note": "百分位网页面内嵌日频数据；100/沪深300市值加权PE-TTM减中国10年期国债收益率，单位百分点",
-      "records": 242
+      "records": 243
     },
     {
       "module": "沪深300",
-      "status": "失败",
-      "date": null,
-      "note": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-      "records": 0
+      "status": "成功",
+      "date": "2026-10-28",
+      "note": "AkShare/Eastmoney公开指数日线；涨跌幅由收盘价计算",
+      "records": 1
     },
     {
       "module": "创业板指",
-      "status": "失败",
-      "date": null,
-      "note": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
-      "records": 0
+      "status": "成功",
+      "date": "2026-10-28",
+      "note": "AkShare/Eastmoney公开指数日线；涨跌幅由收盘价计算",
+      "records": 1
     },
     {
       "module": "科创50",
@@ -2715,14 +2736,14 @@
     {
       "module": "行业板块资金",
       "status": "失败",
-      "date": "2026-10-26",
+      "date": "2026-10-28",
       "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 0
     },
     {
       "module": "概念板块资金",
       "status": "失败，保留旧数据",
-      "date": "2026-10-26",
+      "date": "2026-10-28",
       "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 20
     },
