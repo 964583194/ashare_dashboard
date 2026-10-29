@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-10-28 23:03:58 CST",
-    "data_date": "2026-10-28",
+    "generated_at": "2026-10-29 23:12:00 CST",
+    "data_date": "2026-10-29",
     "overall_status": "百分位网股债与情绪数据可用；其他模块状态见数据来源"
   },
   "overview": {
@@ -240,17 +240,13 @@
   "valuation": {
     "hs300_pe": null,
     "hs300_pe_percentile": null,
-    "equity_bond_spread": 6.1863,
+    "equity_bond_spread": 6.1528,
     "cn10y_yield": null
   },
   "fear_greed": {
-    "latest": 41.94,
-    "date": "2026-10-28",
+    "latest": 22.02,
+    "date": "2026-10-29",
     "series": [
-      {
-        "date": "2025-04-24",
-        "value": 25.47
-      },
       {
         "date": "2025-04-25",
         "value": 31.44
@@ -1706,14 +1702,14 @@
       {
         "date": "2026-10-28",
         "value": 41.94
+      },
+      {
+        "date": "2026-10-29",
+        "value": 22.02
       }
     ]
   },
   "equity_bond_spread_series": [
-    {
-      "date": "2025-10-27",
-      "value": 4.9648
-    },
     {
       "date": "2025-10-28",
       "value": 5.0204
@@ -2681,35 +2677,39 @@
     {
       "date": "2026-10-27",
       "value": 6.1863
+    },
+    {
+      "date": "2026-10-28",
+      "value": 6.1528
     }
   ],
   "sources": [
     {
       "module": "恐惧贪婪指数",
       "status": "成功",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "note": "百分位网公开CSV；0-100分，展示衍生指数；每日历史",
-      "records": 8034
+      "records": 8035
     },
     {
       "module": "沪深300股债利差",
       "status": "成功",
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "note": "百分位网页面内嵌日频数据；100/沪深300市值加权PE-TTM减中国10年期国债收益率，单位百分点",
       "records": 243
     },
     {
       "module": "沪深300",
-      "status": "成功",
+      "status": "更新失败，保留旧数据",
       "date": "2026-10-28",
-      "note": "AkShare/Eastmoney公开指数日线；涨跌幅由收盘价计算",
+      "note": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
       "records": 1
     },
     {
       "module": "创业板指",
-      "status": "成功",
+      "status": "更新失败，保留旧数据",
       "date": "2026-10-28",
-      "note": "AkShare/Eastmoney公开指数日线；涨跌幅由收盘价计算",
+      "note": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
       "records": 1
     },
     {
