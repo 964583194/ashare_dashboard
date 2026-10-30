@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-10-29 23:12:00 CST",
-    "data_date": "2026-10-29",
+    "generated_at": "2026-10-30 23:00:50 CST",
+    "data_date": "2026-10-30",
     "overall_status": "百分位网股债与情绪数据可用；其他模块状态见数据来源"
   },
   "overview": {
@@ -240,17 +240,13 @@
   "valuation": {
     "hs300_pe": null,
     "hs300_pe_percentile": null,
-    "equity_bond_spread": 6.1528,
+    "equity_bond_spread": 6.0437,
     "cn10y_yield": null
   },
   "fear_greed": {
-    "latest": 22.02,
-    "date": "2026-10-29",
+    "latest": 16.41,
+    "date": "2026-10-30",
     "series": [
-      {
-        "date": "2025-04-25",
-        "value": 31.44
-      },
       {
         "date": "2025-04-28",
         "value": 21.58
@@ -1706,14 +1702,14 @@
       {
         "date": "2026-10-29",
         "value": 22.02
+      },
+      {
+        "date": "2026-10-30",
+        "value": 16.41
       }
     ]
   },
   "equity_bond_spread_series": [
-    {
-      "date": "2025-10-28",
-      "value": 5.0204
-    },
     {
       "date": "2025-10-29",
       "value": 5.0222
@@ -2680,21 +2676,25 @@
     },
     {
       "date": "2026-10-28",
-      "value": 6.1528
+      "value": 6.1514
+    },
+    {
+      "date": "2026-10-29",
+      "value": 6.0437
     }
   ],
   "sources": [
     {
       "module": "恐惧贪婪指数",
       "status": "成功",
-      "date": "2026-10-29",
+      "date": "2026-10-30",
       "note": "百分位网公开CSV；0-100分，展示衍生指数；每日历史",
-      "records": 8035
+      "records": 8036
     },
     {
       "module": "沪深300股债利差",
       "status": "成功",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "note": "百分位网页面内嵌日频数据；100/沪深300市值加权PE-TTM减中国10年期国债收益率，单位百分点",
       "records": 243
     },
@@ -2702,48 +2702,48 @@
       "module": "沪深300",
       "status": "更新失败，保留旧数据",
       "date": "2026-10-28",
-      "note": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "note": "Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
       "records": 1
     },
     {
       "module": "创业板指",
       "status": "更新失败，保留旧数据",
       "date": "2026-10-28",
-      "note": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "note": "Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
       "records": 1
     },
     {
       "module": "科创50",
       "status": "失败",
       "date": null,
-      "note": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "note": "Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
       "records": 0
     },
     {
       "module": "上证指数",
       "status": "失败",
       "date": null,
-      "note": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "note": "Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
       "records": 0
     },
     {
       "module": "深证成指",
       "status": "失败",
       "date": null,
-      "note": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "note": "Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
       "records": 0
     },
     {
       "module": "行业板块资金",
       "status": "失败",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 0
     },
     {
       "module": "概念板块资金",
       "status": "失败，保留旧数据",
-      "date": "2026-10-28",
+      "date": "2026-10-29",
       "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 20
     },
