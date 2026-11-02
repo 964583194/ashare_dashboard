@@ -1,154 +1,299 @@
 {
   "meta": {
-    "generated_at": "2026-10-30 23:00:50 CST",
-    "data_date": "2026-10-30",
+    "generated_at": "2026-11-03 02:15:52 CST",
+    "data_date": "2026-11-02",
     "overall_status": "百分位网股债与情绪数据可用；其他模块状态见数据来源"
   },
   "overview": {
-    "hs300": 4083.87,
-    "chinext": 2634.76,
-    "star50": null,
+    "hs300": 4016.92,
+    "chinext": 2458.7,
+    "star50": 1196.94,
     "advancers": null,
     "decliners": null
   },
   "indices": [
     {
       "name": "沪深300",
-      "latest": 4083.87,
-      "change_pct": 0.85,
-      "change_5d": -0.68,
-      "change_20d": -10.14,
-      "date": "2026-10-28"
+      "latest": 4016.92,
+      "change_pct": 0.79,
+      "change_5d": -2.11,
+      "change_20d": -7.46,
+      "date": "2026-11-02"
     },
     {
       "name": "创业板指",
-      "latest": 2634.76,
-      "change_pct": 3.4,
-      "change_5d": -2.22,
-      "change_20d": -22.51,
-      "date": "2026-10-28"
+      "latest": 2458.7,
+      "change_pct": 1.87,
+      "change_5d": -6.8,
+      "change_20d": -21.69,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "科创50",
+      "latest": 1196.94,
+      "change_pct": 3.11,
+      "change_5d": -9.01,
+      "change_20d": -23.07,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "上证指数",
+      "latest": 3638.03,
+      "change_pct": 1.08,
+      "change_5d": -1.61,
+      "change_20d": -4.85,
+      "date": "2026-11-02"
+    },
+    {
+      "name": "深证成指",
+      "latest": 11010.68,
+      "change_pct": 1.63,
+      "change_5d": -4.54,
+      "change_20d": -14.37,
+      "date": "2026-11-02"
     }
   ],
-  "industry_flows": [],
+  "industry_flows": [
+    {
+      "name": "传媒",
+      "change_pct": 8.49,
+      "main_net_inflow": 55.49,
+      "inflow_ratio": null
+    },
+    {
+      "name": "电子",
+      "change_pct": 2.72,
+      "main_net_inflow": 53.19,
+      "inflow_ratio": null
+    },
+    {
+      "name": "半导体",
+      "change_pct": 2.77,
+      "main_net_inflow": 46.08,
+      "inflow_ratio": null
+    },
+    {
+      "name": "非银金融",
+      "change_pct": 3.91,
+      "main_net_inflow": 31.61,
+      "inflow_ratio": null
+    },
+    {
+      "name": "证券Ⅲ",
+      "change_pct": 4.48,
+      "main_net_inflow": 28.38,
+      "inflow_ratio": null
+    },
+    {
+      "name": "证券Ⅱ",
+      "change_pct": 4.48,
+      "main_net_inflow": 28.38,
+      "inflow_ratio": null
+    },
+    {
+      "name": "计算机",
+      "change_pct": 5.48,
+      "main_net_inflow": 23.65,
+      "inflow_ratio": null
+    },
+    {
+      "name": "半导体设备",
+      "change_pct": 4.22,
+      "main_net_inflow": 19.54,
+      "inflow_ratio": null
+    },
+    {
+      "name": "数字芯片设计",
+      "change_pct": 2.28,
+      "main_net_inflow": 15.62,
+      "inflow_ratio": null
+    },
+    {
+      "name": "软件开发",
+      "change_pct": 6.58,
+      "main_net_inflow": 14.78,
+      "inflow_ratio": null
+    },
+    {
+      "name": "数字媒体",
+      "change_pct": 9.75,
+      "main_net_inflow": 14.15,
+      "inflow_ratio": null
+    },
+    {
+      "name": "垂直应用软件",
+      "change_pct": 6.7,
+      "main_net_inflow": 12.67,
+      "inflow_ratio": null
+    },
+    {
+      "name": "通信",
+      "change_pct": 2.93,
+      "main_net_inflow": 12.59,
+      "inflow_ratio": null
+    },
+    {
+      "name": "游戏Ⅱ",
+      "change_pct": 9.06,
+      "main_net_inflow": 12.38,
+      "inflow_ratio": null
+    },
+    {
+      "name": "游戏Ⅲ",
+      "change_pct": 9.06,
+      "main_net_inflow": 12.38,
+      "inflow_ratio": null
+    },
+    {
+      "name": "通信线缆及配套",
+      "change_pct": 3.2,
+      "main_net_inflow": 11.99,
+      "inflow_ratio": null
+    },
+    {
+      "name": "电力设备",
+      "change_pct": 2.16,
+      "main_net_inflow": 11.28,
+      "inflow_ratio": null
+    },
+    {
+      "name": "通信设备",
+      "change_pct": 2.69,
+      "main_net_inflow": 11.17,
+      "inflow_ratio": null
+    },
+    {
+      "name": "广告营销",
+      "change_pct": 8.06,
+      "main_net_inflow": 11.01,
+      "inflow_ratio": null
+    },
+    {
+      "name": "商贸零售",
+      "change_pct": 3.16,
+      "main_net_inflow": 9.89,
+      "inflow_ratio": null
+    }
+  ],
   "concept_flows": [
     {
-      "name": "半导体概念",
-      "change_pct": -0.18,
-      "main_net_inflow": 39.81,
+      "name": "昨日高振幅",
+      "change_pct": 2.68,
+      "main_net_inflow": 103.24,
       "inflow_ratio": null
     },
     {
-      "name": "军工",
-      "change_pct": 2.5,
-      "main_net_inflow": 37.23,
+      "name": "融资融券",
+      "change_pct": 2.44,
+      "main_net_inflow": 95.51,
       "inflow_ratio": null
     },
     {
-      "name": "存储芯片",
-      "change_pct": -0.16,
-      "main_net_inflow": 36.36,
+      "name": "深股通",
+      "change_pct": 2.71,
+      "main_net_inflow": 94.18,
       "inflow_ratio": null
     },
     {
-      "name": "低空经济",
-      "change_pct": 2.45,
-      "main_net_inflow": 33.09,
+      "name": "华为概念",
+      "change_pct": 3.88,
+      "main_net_inflow": 88.87,
       "inflow_ratio": null
     },
     {
-      "name": "贬值受益",
-      "change_pct": 0.56,
-      "main_net_inflow": 29.36,
+      "name": "基金重仓",
+      "change_pct": 2.31,
+      "main_net_inflow": 86.47,
       "inflow_ratio": null
     },
     {
-      "name": "无人机",
-      "change_pct": 2.28,
-      "main_net_inflow": 28.87,
+      "name": "2026中报预增",
+      "change_pct": 1.89,
+      "main_net_inflow": 81.21,
       "inflow_ratio": null
     },
     {
-      "name": "国产芯片",
-      "change_pct": 0.21,
-      "main_net_inflow": 28.21,
+      "name": "基金增仓",
+      "change_pct": 2.41,
+      "main_net_inflow": 78.11,
       "inflow_ratio": null
     },
     {
-      "name": "军民融合",
-      "change_pct": 3.14,
-      "main_net_inflow": 24.59,
+      "name": "人工智能",
+      "change_pct": 4.06,
+      "main_net_inflow": 72.16,
       "inflow_ratio": null
     },
     {
-      "name": "高市净率",
-      "change_pct": -0.51,
-      "main_net_inflow": 23.48,
-      "inflow_ratio": null
-    },
-    {
-      "name": "华为汽车",
-      "change_pct": 2.72,
-      "main_net_inflow": 21.36,
-      "inflow_ratio": null
-    },
-    {
-      "name": "飞行汽车(eVTOL)",
-      "change_pct": 4.17,
-      "main_net_inflow": 20.43,
-      "inflow_ratio": null
-    },
-    {
-      "name": "航天航空",
-      "change_pct": 4.51,
-      "main_net_inflow": 16.95,
-      "inflow_ratio": null
-    },
-    {
-      "name": "荣耀概念",
-      "change_pct": -0.3,
-      "main_net_inflow": 15.51,
-      "inflow_ratio": null
-    },
-    {
-      "name": "大飞机",
-      "change_pct": 2.59,
-      "main_net_inflow": 15.09,
-      "inflow_ratio": null
-    },
-    {
-      "name": "小米汽车",
-      "change_pct": 2.36,
-      "main_net_inflow": 15.0,
+      "name": "创业板综",
+      "change_pct": 3.06,
+      "main_net_inflow": 69.47,
       "inflow_ratio": null
     },
     {
       "name": "百元股",
-      "change_pct": -1.38,
-      "main_net_inflow": 14.94,
+      "change_pct": 2.27,
+      "main_net_inflow": 66.04,
+      "inflow_ratio": null
+    },
+    {
+      "name": "AI应用",
+      "change_pct": 6.1,
+      "main_net_inflow": 65.39,
+      "inflow_ratio": null
+    },
+    {
+      "name": "AIGC概念",
+      "change_pct": 7.37,
+      "main_net_inflow": 59.7,
+      "inflow_ratio": null
+    },
+    {
+      "name": "富时罗素",
+      "change_pct": 2.34,
+      "main_net_inflow": 59.32,
       "inflow_ratio": null
     },
     {
       "name": "科技风格",
-      "change_pct": -0.78,
-      "main_net_inflow": 14.69,
+      "change_pct": 1.66,
+      "main_net_inflow": 58.82,
       "inflow_ratio": null
     },
     {
-      "name": "通用航空",
-      "change_pct": 3.46,
-      "main_net_inflow": 13.7,
+      "name": "深成500",
+      "change_pct": 2.44,
+      "main_net_inflow": 54.97,
       "inflow_ratio": null
     },
     {
-      "name": "先进封装",
-      "change_pct": -0.6,
-      "main_net_inflow": 13.7,
+      "name": "半导体概念",
+      "change_pct": 2.79,
+      "main_net_inflow": 52.81,
       "inflow_ratio": null
     },
     {
-      "name": "次新股",
-      "change_pct": -0.83,
-      "main_net_inflow": 13.06,
+      "name": "MSCI中国",
+      "change_pct": 1.79,
+      "main_net_inflow": 50.79,
+      "inflow_ratio": null
+    },
+    {
+      "name": "大盘成长",
+      "change_pct": 1.95,
+      "main_net_inflow": 49.26,
+      "inflow_ratio": null
+    },
+    {
+      "name": "大数据",
+      "change_pct": 4.97,
+      "main_net_inflow": 43.27,
+      "inflow_ratio": null
+    },
+    {
+      "name": "存储芯片",
+      "change_pct": 2.86,
+      "main_net_inflow": 42.25,
       "inflow_ratio": null
     }
   ],
@@ -161,8 +306,8 @@
       "status": "本次来源未提供可靠数据"
     },
     {
-      "name": "半导体概念",
-      "change_pct": -0.18,
+      "name": "半导体",
+      "change_pct": 2.77,
       "change_5d": null,
       "change_20d": null,
       "status": "仅有当日资金排名；多日趋势待接入"
@@ -183,10 +328,10 @@
     },
     {
       "name": "AI应用",
-      "change_pct": null,
+      "change_pct": 6.1,
       "change_5d": null,
       "change_20d": null,
-      "status": "本次来源未提供可靠数据"
+      "status": "仅有当日资金排名；多日趋势待接入"
     },
     {
       "name": "电网设备",
@@ -240,17 +385,13 @@
   "valuation": {
     "hs300_pe": null,
     "hs300_pe_percentile": null,
-    "equity_bond_spread": 6.0437,
+    "equity_bond_spread": 5.7619,
     "cn10y_yield": null
   },
   "fear_greed": {
-    "latest": 16.41,
-    "date": "2026-10-30",
+    "latest": 47.37,
+    "date": "2026-11-02",
     "series": [
-      {
-        "date": "2025-04-28",
-        "value": 21.58
-      },
       {
         "date": "2025-04-29",
         "value": 28.55
@@ -1706,22 +1847,14 @@
       {
         "date": "2026-10-30",
         "value": 16.41
+      },
+      {
+        "date": "2026-11-02",
+        "value": 47.37
       }
     ]
   },
   "equity_bond_spread_series": [
-    {
-      "date": "2025-10-29",
-      "value": 5.0222
-    },
-    {
-      "date": "2025-10-30",
-      "value": 5.0903
-    },
-    {
-      "date": "2025-10-31",
-      "value": 5.2905
-    },
     {
       "date": "2025-11-03",
       "value": 5.247
@@ -2681,70 +2814,78 @@
     {
       "date": "2026-10-29",
       "value": 6.0437
+    },
+    {
+      "date": "2026-10-30",
+      "value": 6.1232
+    },
+    {
+      "date": "2026-11-02",
+      "value": 5.7619
     }
   ],
   "sources": [
     {
       "module": "恐惧贪婪指数",
       "status": "成功",
-      "date": "2026-10-30",
+      "date": "2026-11-02",
       "note": "百分位网公开CSV；0-100分，展示衍生指数；每日历史",
-      "records": 8036
+      "records": 8037
     },
     {
       "module": "沪深300股债利差",
       "status": "成功",
-      "date": "2026-10-29",
+      "date": "2026-11-02",
       "note": "百分位网页面内嵌日频数据；100/沪深300市值加权PE-TTM减中国10年期国债收益率，单位百分点",
-      "records": 243
+      "records": 242
     },
     {
       "module": "沪深300",
-      "status": "更新失败，保留旧数据",
-      "date": "2026-10-28",
-      "note": "Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
+      "status": "成功",
+      "date": "2026-11-02",
+      "note": "AkShare/Eastmoney公开指数日线；涨跌幅由收盘价计算",
       "records": 1
     },
     {
       "module": "创业板指",
-      "status": "更新失败，保留旧数据",
-      "date": "2026-10-28",
-      "note": "Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
+      "status": "成功",
+      "date": "2026-11-02",
+      "note": "AkShare/Eastmoney公开指数日线；涨跌幅由收盘价计算",
       "records": 1
     },
     {
       "module": "科创50",
-      "status": "失败",
-      "date": null,
-      "note": "Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
-      "records": 0
+      "status": "成功",
+      "date": "2026-11-02",
+      "note": "AkShare/Eastmoney公开指数日线；涨跌幅由收盘价计算",
+      "records": 1
     },
     {
       "module": "上证指数",
-      "status": "失败",
-      "date": null,
-      "note": "Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
-      "records": 0
+      "status": "成功",
+      "date": "2026-11-02",
+      "note": "AkShare/Eastmoney公开指数日线；涨跌幅由收盘价计算",
+      "records": 1
     },
     {
       "module": "深证成指",
-      "status": "失败",
-      "date": null,
-      "note": "Push2RateLimitError: 东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
-      "records": 0
+      "status": "成功",
+      "date": "2026-11-02",
+      "note": "AkShare/Eastmoney公开指数日线；涨跌幅由收盘价计算",
+      "records": 1
     },
     {
       "module": "行业板块资金",
-      "status": "失败",
-      "date": "2026-10-29",
-      "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
-      "records": 0
+      "status": "成功",
+      "date": "2026-11-02",
+      "note": "东方财富公开资金流排名（供应商估算值，亿元）",
+      "records": 20
     },
     {
       "module": "概念板块资金",
-      "status": "失败，保留旧数据",
-      "date": "2026-10-29",
-      "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "status": "成功",
+      "date": "2026-11-02",
+      "note": "东方财富公开资金流排名（供应商估算值，亿元）",
       "records": 20
     },
     {
