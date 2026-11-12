@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-11-12 00:07:02 CST",
-    "data_date": "2026-11-11",
+    "generated_at": "2026-11-13 00:46:36 CST",
+    "data_date": "2026-11-12",
     "overall_status": "百分位网股债与情绪数据可用；其他模块状态见数据来源"
   },
   "overview": {
@@ -177,123 +177,123 @@
   ],
   "concept_flows": [
     {
-      "name": "融资融券",
-      "change_pct": 1.53,
-      "main_net_inflow": 144.35,
+      "name": "大基金持股",
+      "change_pct": 0.02,
+      "main_net_inflow": 24.49,
       "inflow_ratio": null
     },
     {
-      "name": "深股通",
-      "change_pct": 1.67,
-      "main_net_inflow": 131.33,
+      "name": "智谱AI概念",
+      "change_pct": -2.73,
+      "main_net_inflow": 18.67,
       "inflow_ratio": null
     },
     {
-      "name": "机器人概念",
-      "change_pct": 2.92,
-      "main_net_inflow": 94.63,
+      "name": "先进封装",
+      "change_pct": -0.96,
+      "main_net_inflow": 17.52,
       "inflow_ratio": null
     },
     {
-      "name": "基金减仓",
-      "change_pct": 1.34,
-      "main_net_inflow": 92.71,
+      "name": "小红书概念",
+      "change_pct": -1.67,
+      "main_net_inflow": 16.95,
       "inflow_ratio": null
     },
     {
-      "name": "创业板综",
-      "change_pct": 2.61,
-      "main_net_inflow": 91.35,
+      "name": "高带宽内存",
+      "change_pct": -0.18,
+      "main_net_inflow": 15.28,
       "inflow_ratio": null
     },
     {
-      "name": "华为概念",
-      "change_pct": 2.78,
-      "main_net_inflow": 85.72,
+      "name": "中芯概念",
+      "change_pct": -1.14,
+      "main_net_inflow": 14.42,
       "inflow_ratio": null
     },
     {
-      "name": "百元股",
-      "change_pct": 1.95,
-      "main_net_inflow": 73.03,
+      "name": "跨境电商",
+      "change_pct": -1.13,
+      "main_net_inflow": 14.09,
       "inflow_ratio": null
     },
     {
-      "name": "通信技术",
-      "change_pct": 2.78,
-      "main_net_inflow": 71.28,
+      "name": "职业教育",
+      "change_pct": -2.32,
+      "main_net_inflow": 11.38,
       "inflow_ratio": null
     },
     {
-      "name": "深成500",
-      "change_pct": 0.79,
-      "main_net_inflow": 69.53,
+      "name": "快手概念",
+      "change_pct": -2.04,
+      "main_net_inflow": 10.36,
       "inflow_ratio": null
     },
     {
-      "name": "专精特新",
-      "change_pct": 2.49,
-      "main_net_inflow": 68.48,
+      "name": "光刻机",
+      "change_pct": 0.09,
+      "main_net_inflow": 9.9,
       "inflow_ratio": null
     },
     {
-      "name": "国产芯片",
-      "change_pct": 2.58,
-      "main_net_inflow": 62.6,
+      "name": "AI芯片",
+      "change_pct": -0.81,
+      "main_net_inflow": 9.37,
       "inflow_ratio": null
     },
     {
-      "name": "科技风格",
-      "change_pct": 1.62,
-      "main_net_inflow": 60.96,
+      "name": "预制菜概念",
+      "change_pct": 0.89,
+      "main_net_inflow": 8.4,
       "inflow_ratio": null
     },
     {
-      "name": "虚拟现实",
-      "change_pct": 3.98,
-      "main_net_inflow": 60.49,
+      "name": "移动支付",
+      "change_pct": -1.89,
+      "main_net_inflow": 6.74,
       "inflow_ratio": null
     },
     {
-      "name": "新能源车",
-      "change_pct": 2.35,
-      "main_net_inflow": 60.02,
+      "name": "精准医疗",
+      "change_pct": -0.13,
+      "main_net_inflow": 6.24,
       "inflow_ratio": null
     },
     {
-      "name": "5G概念",
-      "change_pct": 2.67,
-      "main_net_inflow": 59.48,
+      "name": "破净股",
+      "change_pct": -0.94,
+      "main_net_inflow": 6.11,
       "inflow_ratio": null
     },
     {
-      "name": "昨日高振幅",
-      "change_pct": 2.99,
-      "main_net_inflow": 58.06,
+      "name": "工业气体",
+      "change_pct": -1.09,
+      "main_net_inflow": 5.92,
       "inflow_ratio": null
     },
     {
-      "name": "人形机器人",
-      "change_pct": 3.7,
-      "main_net_inflow": 57.7,
+      "name": "辅助生殖",
+      "change_pct": -0.17,
+      "main_net_inflow": 5.77,
       "inflow_ratio": null
     },
     {
-      "name": "消费电子概念",
-      "change_pct": 3.72,
-      "main_net_inflow": 57.63,
+      "name": "华为海思",
+      "change_pct": -1.92,
+      "main_net_inflow": 5.35,
       "inflow_ratio": null
     },
     {
-      "name": "富时罗素",
-      "change_pct": 0.78,
-      "main_net_inflow": 55.92,
+      "name": "红利破净股",
+      "change_pct": -0.63,
+      "main_net_inflow": 4.84,
       "inflow_ratio": null
     },
     {
-      "name": "半导体概念",
-      "change_pct": 2.39,
-      "main_net_inflow": 55.2,
+      "name": "Web3.0",
+      "change_pct": -2.96,
+      "main_net_inflow": 4.84,
       "inflow_ratio": null
     }
   ],
@@ -385,17 +385,13 @@
   "valuation": {
     "hs300_pe": null,
     "hs300_pe_percentile": null,
-    "equity_bond_spread": 5.8347,
+    "equity_bond_spread": 5.8615,
     "cn10y_yield": null
   },
   "fear_greed": {
-    "latest": 21.45,
-    "date": "2026-11-11",
+    "latest": 12.16,
+    "date": "2026-11-12",
     "series": [
-      {
-        "date": "2025-05-13",
-        "value": 59.38
-      },
       {
         "date": "2025-05-14",
         "value": 64.32
@@ -1851,18 +1847,14 @@
       {
         "date": "2026-11-11",
         "value": 21.45
+      },
+      {
+        "date": "2026-11-12",
+        "value": 12.16
       }
     ]
   },
   "equity_bond_spread_series": [
-    {
-      "date": "2025-11-10",
-      "value": 5.1487
-    },
-    {
-      "date": "2025-11-11",
-      "value": 5.1955
-    },
     {
       "date": "2025-11-12",
       "value": 5.1809
@@ -2821,25 +2813,33 @@
     },
     {
       "date": "2026-11-09",
-      "value": 5.8068
+      "value": 5.8067
     },
     {
       "date": "2026-11-10",
-      "value": 5.8347
+      "value": 5.8345
+    },
+    {
+      "date": "2026-11-11",
+      "value": 5.8325
+    },
+    {
+      "date": "2026-11-12",
+      "value": 5.8615
     }
   ],
   "sources": [
     {
       "module": "恐惧贪婪指数",
       "status": "成功",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "note": "百分位网公开CSV；0-100分，展示衍生指数；每日历史",
-      "records": 2635
+      "records": 2636
     },
     {
       "module": "沪深300股债利差",
       "status": "成功",
-      "date": "2026-11-10",
+      "date": "2026-11-12",
       "note": "百分位网页面内嵌日频数据；100/沪深300市值加权PE-TTM减中国10年期国债收益率，单位百分点",
       "records": 243
     },
@@ -2881,15 +2881,15 @@
     {
       "module": "行业板块资金",
       "status": "失败，保留旧数据",
-      "date": "2026-11-10",
+      "date": "2026-11-11",
       "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 20
     },
     {
       "module": "概念板块资金",
-      "status": "失败，保留旧数据",
-      "date": "2026-11-10",
-      "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "status": "成功",
+      "date": "2026-11-11",
+      "note": "东方财富公开资金流排名（供应商估算值，亿元）",
       "records": 20
     },
     {
