@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-11-13 00:46:36 CST",
-    "data_date": "2026-11-12",
+    "generated_at": "2026-11-14 00:16:03 CST",
+    "data_date": "2026-11-13",
     "overall_status": "百分位网股债与情绪数据可用；其他模块状态见数据来源"
   },
   "overview": {
@@ -389,13 +389,9 @@
     "cn10y_yield": null
   },
   "fear_greed": {
-    "latest": 12.16,
-    "date": "2026-11-12",
+    "latest": 10.42,
+    "date": "2026-11-13",
     "series": [
-      {
-        "date": "2025-05-14",
-        "value": 64.32
-      },
       {
         "date": "2025-05-15",
         "value": 60.49
@@ -1851,6 +1847,10 @@
       {
         "date": "2026-11-12",
         "value": 12.16
+      },
+      {
+        "date": "2026-11-13",
+        "value": 10.42
       }
     ]
   },
@@ -2832,9 +2832,9 @@
     {
       "module": "恐惧贪婪指数",
       "status": "成功",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "note": "百分位网公开CSV；0-100分，展示衍生指数；每日历史",
-      "records": 2636
+      "records": 2637
     },
     {
       "module": "沪深300股债利差",
@@ -2881,15 +2881,15 @@
     {
       "module": "行业板块资金",
       "status": "失败，保留旧数据",
-      "date": "2026-11-11",
+      "date": "2026-11-12",
       "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 20
     },
     {
       "module": "概念板块资金",
-      "status": "成功",
-      "date": "2026-11-11",
-      "note": "东方财富公开资金流排名（供应商估算值，亿元）",
+      "status": "失败，保留旧数据",
+      "date": "2026-11-12",
+      "note": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "records": 20
     },
     {
