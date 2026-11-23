@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-11-21 00:55:47 CST",
-    "data_date": "2026-11-20",
+    "generated_at": "2026-11-24 04:07:10 CST",
+    "data_date": "2026-11-23",
     "overall_status": "百分位网股债与情绪数据可用；其他模块状态见数据来源"
   },
   "overview": {
@@ -385,17 +385,13 @@
   "valuation": {
     "hs300_pe": null,
     "hs300_pe_percentile": null,
-    "equity_bond_spread": 5.8121,
+    "equity_bond_spread": 5.8602,
     "cn10y_yield": null
   },
   "fear_greed": {
-    "latest": 8.13,
-    "date": "2026-11-20",
+    "latest": 21.4,
+    "date": "2026-11-23",
     "series": [
-      {
-        "date": "2025-05-22",
-        "value": 56.09
-      },
       {
         "date": "2025-05-23",
         "value": 53.33
@@ -1851,18 +1847,14 @@
       {
         "date": "2026-11-20",
         "value": 8.13
+      },
+      {
+        "date": "2026-11-23",
+        "value": 21.4
       }
     ]
   },
   "equity_bond_spread_series": [
-    {
-      "date": "2025-11-20",
-      "value": 5.2598
-    },
-    {
-      "date": "2025-11-21",
-      "value": 5.3933
-    },
     {
       "date": "2025-11-24",
       "value": 5.4223
@@ -2826,22 +2818,26 @@
     {
       "date": "2026-11-20",
       "value": 5.8121
+    },
+    {
+      "date": "2026-11-23",
+      "value": 5.8602
     }
   ],
   "sources": [
     {
       "module": "恐惧贪婪指数",
       "status": "成功",
-      "date": "2026-11-20",
+      "date": "2026-11-23",
       "note": "百分位网公开CSV；0-100分，展示衍生指数；每日历史",
-      "records": 2642
+      "records": 2643
     },
     {
       "module": "沪深300股债利差",
       "status": "成功",
-      "date": "2026-11-20",
+      "date": "2026-11-23",
       "note": "百分位网页面内嵌日频数据；100/沪深300市值加权PE-TTM减中国10年期国债收益率，单位百分点",
-      "records": 243
+      "records": 242
     },
     {
       "module": "沪深300",
@@ -2881,14 +2877,14 @@
     {
       "module": "行业板块资金",
       "status": "失败，保留旧数据",
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "note": "AttributeError: stock_sector_fund_flow_rank 已在 1.20.45 更名为 stock_fund_flow_sector_rank_em，请改用 ak.stock_fund_flow_sector_rank_em；参数与返回的列也",
       "records": 20
     },
     {
       "module": "概念板块资金",
       "status": "失败，保留旧数据",
-      "date": "2026-11-19",
+      "date": "2026-11-20",
       "note": "AttributeError: stock_sector_fund_flow_rank 已在 1.20.45 更名为 stock_fund_flow_sector_rank_em，请改用 ak.stock_fund_flow_sector_rank_em；参数与返回的列也",
       "records": 20
     },
